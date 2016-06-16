@@ -1,5 +1,9 @@
 package djm.rs;
 
+import djm.rs.userservice.UserServiceImpl;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 /*
@@ -12,19 +16,21 @@ import java.util.Scanner;
  * @author djm
  */
 public class veriJira {
+    
+    public static final String FILE_TO_PARSE = "H:\\veriJiraProject\\employee.csv";
+    public static UserServiceImpl userService = new UserServiceImpl();  
 
     public static void main(String[] args) {
         System.out.println("Hello World!"); // Display the string.
 
         Scanner test = new Scanner(System.in);
-        
-        
-
         while(true) {
             System.out.println("Please enter option");
             int option = test.nextInt();
             if (option == 1) {
                 System.out.println("here is list of the users:");
+                userService.listAllUsers(FILE_TO_PARSE);
+                
             } else if (option == 2) {
                 System.out.println("Please enter new user");
                 System.out.println("Enter your Name");
@@ -44,7 +50,12 @@ public class veriJira {
             }
 
         }
+        
+        
+        
+        
 
     }
-
+    
+   
 }
