@@ -1,9 +1,7 @@
 package djm.rs;
 
+import djm.rs.userservice.UserServiceApi;
 import djm.rs.userservice.UserServiceImpl;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Scanner;
 
 /*
@@ -18,7 +16,7 @@ import java.util.Scanner;
 public class veriJira {
     
     public static final String FILE_TO_PARSE = "H:\\veriJiraProject\\employee.csv";
-    public static UserServiceImpl userService = new UserServiceImpl();  
+    public static UserServiceApi userService = new UserServiceImpl();  
 
     public static void main(String[] args) {
         System.out.println("Hello World!"); // Display the string.
