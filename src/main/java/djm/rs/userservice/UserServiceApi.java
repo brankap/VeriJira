@@ -9,11 +9,8 @@ package djm.rs.userservice;
  * @author vebrpaa
  */
 public interface UserServiceApi {
-    
+
     public void listAllUsers(String fileToParse);
 
-    public void createNewUser ();
-
-
-    
+    public void createNewUser(String newUser , String filePath);
 }
