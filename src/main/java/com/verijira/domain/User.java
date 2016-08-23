@@ -1,12 +1,11 @@
-
-package djm.rs.domain;
+package com.verijira.domain;
 
 /**
  *
  * @author vebrpaa
  */
 public class User {
-    
+
     private int id;
     private String name;
     private String lastName;
@@ -43,6 +42,4 @@ public class User {
     public void setRole(String role) {
         this.role = role;
     }
-    
-    
 }
